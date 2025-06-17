@@ -1,5 +1,5 @@
 import { LightningElement } from 'lwc';
 
 export default class IframeExercise extends LightningElement {
-    iframeUrl = 'https://www.slides.google.com/'; // Replace with real URL
+    iframeUrl = 'https://www.docs.google.com/presentation'; // Replace with real URL
 }
