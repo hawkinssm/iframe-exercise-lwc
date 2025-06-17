@@ -7,9 +7,4 @@
         <target>lightning__RecordPage</target>
         <target>lightning__HomePage</target>
     </targets>
-    <targetConfigs>
-        <targetConfig targets="lightning__HomePage">
-            <access>global</access>
-        </targetConfig>
-    </targetConfigs>
 </LightningComponentBundle>
