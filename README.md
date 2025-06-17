@@ -1,18 +1,22 @@
-# Salesforce DX Project: Next Steps
+# LWC iFrame Exercise
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+A simple Lightning Web Component (LWC) that embeds an external web application using an iFrame on a Salesforce Lightning Home Page.
 
-## How Do You Plan to Deploy Your Changes?
+## Features
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+- Embeds a configurable iFrame in a Lightning Experience page
+- Exposed to Lightning App Pages, Record Pages, and Home Pages
+- Designed for profile-based visibility control (e.g., Sales Profile only)
+- Compliant with Salesforce CSP Trusted Sites security settings
 
-## Configure Your Salesforce DX Project
+## Files
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+- `iframeExercise.js` — Component logic and URL configuration
+- `iframeExercise.html` — Template containing the iFrame
+- `iframeExercise.js-meta.xml` — Metadata defining component exposure and page targets
 
-## Read All About It
+## Setup Instructions
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+1. **Set Trusted Site in Salesforce:**
+
+   - Go to **Setup → CSP Trusted Sites → New**.
