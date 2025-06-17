@@ -20,3 +20,13 @@ A simple Lightning Web Component (LWC) that embeds an external web application u
 1. **Set Trusted Site in Salesforce:**
 
    - Go to **Setup → CSP Trusted Sites → New**.
+   - Enter the iFrame URL domain.
+
+2. **Adjust iFrame URL:**
+
+   - In `iframeExercise.js`, update the `iframeUrl` constant to the desired target URL.
+
+3. **Deploy to Salesforce Org:**
+
+   ```bash
+   sfdx force:source:deploy -p force-app/main/default/lwc/iframeExercise
